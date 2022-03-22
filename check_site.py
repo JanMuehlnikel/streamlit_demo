@@ -10,7 +10,7 @@ def app():
 
     # Container
     c1, c2, c3 = st.columns([1, 7, 1])
-    c2.markdown("<h1 style='text-align: center; color: white;'>SDSN X GIZ Policy Tracing</h1>", unsafe_allow_html=True)
+    c2.markdown("<h1 style='text-align: center; color: black;'>SDSN X GIZ Policy Tracing</h1>", unsafe_allow_html=True)
     c1, c2, c3 = st.columns([1.8, 7, 1])
     image = Image.open('pic1.PNG')
     c2.image(image, width=1000)
