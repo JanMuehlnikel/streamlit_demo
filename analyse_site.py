@@ -1,4 +1,6 @@
 import streamlit as st
+import pdfplumber
+
 
 def app():
     # Sidebar
@@ -8,10 +10,10 @@ def app():
     with st.container():
         st.markdown("<h1 style='text-align: center; color: white;'>SDSN X GIZ Policy Tracing</h1>",
                     unsafe_allow_html=True)
-        pic = st.file_uploader('Upload', type=['pdf'])
+        file = st.file_uploader('Upload', type=['pdf'])
 
-        if pic is not None:
-            st.image(pic)
+        if file is not None:
+            st.write('... ')
         else:
             st.write(' ')
             st.write(' ')

@@ -4,7 +4,7 @@ import check_site
 from multiapp import MultiApp
 import streamlit as st
 
-st.set_page_config(f'Demo', layout="wide")
+st.set_page_config(f'SDSN x GIZ Policy Tracing', layout="wide")
 
 app = MultiApp()
 

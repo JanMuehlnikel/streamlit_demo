@@ -1,6 +1,7 @@
 """Frameworks for running multiple Streamlit applications as a single app.
 """
 import streamlit as st
+from PIL import Image
 
 class MultiApp:
     """Framework for combining multiple streamlit applications.
@@ -39,6 +40,9 @@ class MultiApp:
         })
 
     def run(self):
+        st.sidebar.write(format_func=lambda app: app['title'])
+        image = Image.open('giz_sdsn.jpg')
+        st.sidebar.image(image)
         app = st.sidebar.radio(
             'Go To',
             self.apps,
