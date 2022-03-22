@@ -1,6 +1,4 @@
 import streamlit as st
-import pdfplumber
-
 
 def app():
     # Sidebar
